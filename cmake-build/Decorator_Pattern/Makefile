@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles /Users/gongzian/src/Design-Patterns-Examples/cmake-build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/gongzian/src/Design-Patterns-Examples/cmake-build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles /Users/gongzian/src/Design-Patterns-Examples/cmake-build/Decorator_Pattern//CMakeFiles/progress.marks
+	cd /Users/gongzian/src/Design-Patterns-Examples/cmake-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Decorator_Pattern/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/gongzian/src/Design-Patterns-Examples/cmake-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Decorator_Pattern/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,44 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/gongzian/src/Design-Patterns-Examples/cmake-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Decorator_Pattern/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/gongzian/src/Design-Patterns-Examples/cmake-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Decorator_Pattern/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/gongzian/src/Design-Patterns-Examples/cmake-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Observer_Pattern
+# Convenience name for target.
+Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/rule:
+	cd /Users/gongzian/src/Design-Patterns-Examples/cmake-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/rule
+.PHONY : Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/rule
 
-# Build rule for target.
-Observer_Pattern: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Observer_Pattern
-.PHONY : Observer_Pattern
-
-# fast build rule for target.
-Observer_Pattern/fast:
-	$(MAKE) $(MAKESILENT) -f Observer_Pattern/CMakeFiles/Observer_Pattern.dir/build.make Observer_Pattern/CMakeFiles/Observer_Pattern.dir/build
-.PHONY : Observer_Pattern/fast
-
-#=============================================================================
-# Target rules for targets named Decorator_Pattern
-
-# Build rule for target.
-Decorator_Pattern: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Decorator_Pattern
+# Convenience name for target.
+Decorator_Pattern: Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/rule
 .PHONY : Decorator_Pattern
 
 # fast build rule for target.
 Decorator_Pattern/fast:
-	$(MAKE) $(MAKESILENT) -f Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/build.make Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/build
+	cd /Users/gongzian/src/Design-Patterns-Examples/cmake-build && $(MAKE) $(MAKESILENT) -f Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/build.make Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/build
 .PHONY : Decorator_Pattern/fast
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	cd /Users/gongzian/src/Design-Patterns-Examples/cmake-build && $(MAKE) $(MAKESILENT) -f Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/build.make Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /Users/gongzian/src/Design-Patterns-Examples/cmake-build && $(MAKE) $(MAKESILENT) -f Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/build.make Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /Users/gongzian/src/Design-Patterns-Examples/cmake-build && $(MAKE) $(MAKESILENT) -f Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/build.make Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -151,7 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Decorator_Pattern"
-	@echo "... Observer_Pattern"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -163,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/gongzian/src/Design-Patterns-Examples/cmake-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

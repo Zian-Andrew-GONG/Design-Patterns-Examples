@@ -7,3 +7,4 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/cmake-build/bin)
 project(Design_Pattern_Examples VERSION 1.0)
 
 add_subdirectory(Observer_Pattern)
+add_subdirectory(Decorator_Pattern)
