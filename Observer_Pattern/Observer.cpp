@@ -12,7 +12,7 @@ void TemperatureObserver::update(double temperature, double humidity, double pre
 
 void HumidityObserver::display() {
   std::cout << "- Humidity Observer display -" << "\n"
-            << "The Humidity is " << m_humidity << std::endl;
+            << "The Humidity is " << m_humidity * 100 << "%" << std::endl;
 }
 
 void HumidityObserver::update(double temperature, double humidity, double pressure) {

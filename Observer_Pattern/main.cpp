@@ -18,6 +18,6 @@ int main() {
   temp->registerObserver(temp_obs);
   hum->registerObserver(hum_obs);
   temp->setState(37.0);
-  hum->setState(2.0);
+  hum->setState(0.7);
   return 0;
 }
