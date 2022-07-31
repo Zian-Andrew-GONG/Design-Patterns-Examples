@@ -24,3 +24,16 @@ class Mocha: public CondimentDecorator {
     }
 };
 
+class Milk: public CondimentDecorator {
+  public:
+    Milk(std::shared_ptr<Beverage> beverage_ptr) {
+      m_beverage_ptr = beverage_ptr;
+    }
+    virtual std::string getDescription() override {
+      return m_beverage_ptr->getDescription() + ", Milk";
+    }
+    virtual double cost() override {
+      return m_beverage_ptr->cost() + 0.5;
+    }
+};
+
