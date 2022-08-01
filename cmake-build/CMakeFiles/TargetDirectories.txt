@@ -6,3 +6,6 @@
 /Users/gongzian/src/Design-Patterns-Examples/cmake-build/Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir
 /Users/gongzian/src/Design-Patterns-Examples/cmake-build/Decorator_Pattern/CMakeFiles/edit_cache.dir
 /Users/gongzian/src/Design-Patterns-Examples/cmake-build/Decorator_Pattern/CMakeFiles/rebuild_cache.dir
+/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Factory_Pattern/CMakeFiles/Factory_Pattern.dir
+/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Factory_Pattern/CMakeFiles/edit_cache.dir
+/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Factory_Pattern/CMakeFiles/rebuild_cache.dir

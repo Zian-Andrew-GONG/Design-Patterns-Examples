@@ -8,3 +8,4 @@ project(Design_Pattern_Examples VERSION 1.0)
 
 add_subdirectory(Observer_Pattern)
 add_subdirectory(Decorator_Pattern)
+add_subdirectory(Factory_Pattern)

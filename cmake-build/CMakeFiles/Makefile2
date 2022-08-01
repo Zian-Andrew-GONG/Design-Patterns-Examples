@@ -65,16 +65,19 @@ CMAKE_BINARY_DIR = /Users/gongzian/src/Design-Patterns-Examples/cmake-build
 # The main recursive "all" target.
 all: Observer_Pattern/all
 all: Decorator_Pattern/all
+all: Factory_Pattern/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: Observer_Pattern/preinstall
 preinstall: Decorator_Pattern/preinstall
+preinstall: Factory_Pattern/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: Observer_Pattern/clean
 clean: Decorator_Pattern/clean
+clean: Factory_Pattern/clean
 .PHONY : clean
 
 #=============================================================================
@@ -91,6 +94,21 @@ Decorator_Pattern/preinstall:
 # Recursive "clean" directory target.
 Decorator_Pattern/clean: Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/clean
 .PHONY : Decorator_Pattern/clean
+
+#=============================================================================
+# Directory level rules for directory Factory_Pattern
+
+# Recursive "all" directory target.
+Factory_Pattern/all: Factory_Pattern/CMakeFiles/Factory_Pattern.dir/all
+.PHONY : Factory_Pattern/all
+
+# Recursive "preinstall" directory target.
+Factory_Pattern/preinstall:
+.PHONY : Factory_Pattern/preinstall
+
+# Recursive "clean" directory target.
+Factory_Pattern/clean: Factory_Pattern/CMakeFiles/Factory_Pattern.dir/clean
+.PHONY : Factory_Pattern/clean
 
 #=============================================================================
 # Directory level rules for directory Observer_Pattern
@@ -114,7 +132,7 @@ Observer_Pattern/clean: Observer_Pattern/CMakeFiles/Observer_Pattern.dir/clean
 Observer_Pattern/CMakeFiles/Observer_Pattern.dir/all:
 	$(MAKE) $(MAKESILENT) -f Observer_Pattern/CMakeFiles/Observer_Pattern.dir/build.make Observer_Pattern/CMakeFiles/Observer_Pattern.dir/depend
 	$(MAKE) $(MAKESILENT) -f Observer_Pattern/CMakeFiles/Observer_Pattern.dir/build.make Observer_Pattern/CMakeFiles/Observer_Pattern.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=3,4,5,6 "Built target Observer_Pattern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=5,6,7,8 "Built target Observer_Pattern"
 .PHONY : Observer_Pattern/CMakeFiles/Observer_Pattern.dir/all
 
 # Build rule for subdir invocation for target.
@@ -158,6 +176,32 @@ Decorator_Pattern: Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/rule
 Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/clean:
 	$(MAKE) $(MAKESILENT) -f Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/build.make Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/clean
 .PHONY : Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/clean
+
+#=============================================================================
+# Target rules for target Factory_Pattern/CMakeFiles/Factory_Pattern.dir
+
+# All Build rule for target.
+Factory_Pattern/CMakeFiles/Factory_Pattern.dir/all:
+	$(MAKE) $(MAKESILENT) -f Factory_Pattern/CMakeFiles/Factory_Pattern.dir/build.make Factory_Pattern/CMakeFiles/Factory_Pattern.dir/depend
+	$(MAKE) $(MAKESILENT) -f Factory_Pattern/CMakeFiles/Factory_Pattern.dir/build.make Factory_Pattern/CMakeFiles/Factory_Pattern.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=3,4 "Built target Factory_Pattern"
+.PHONY : Factory_Pattern/CMakeFiles/Factory_Pattern.dir/all
+
+# Build rule for subdir invocation for target.
+Factory_Pattern/CMakeFiles/Factory_Pattern.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Factory_Pattern/CMakeFiles/Factory_Pattern.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles 0
+.PHONY : Factory_Pattern/CMakeFiles/Factory_Pattern.dir/rule
+
+# Convenience name for target.
+Factory_Pattern: Factory_Pattern/CMakeFiles/Factory_Pattern.dir/rule
+.PHONY : Factory_Pattern
+
+# clean rule for target.
+Factory_Pattern/CMakeFiles/Factory_Pattern.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Factory_Pattern/CMakeFiles/Factory_Pattern.dir/build.make Factory_Pattern/CMakeFiles/Factory_Pattern.dir/clean
+.PHONY : Factory_Pattern/CMakeFiles/Factory_Pattern.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
