@@ -9,3 +9,9 @@
 /Users/gongzian/src/Design-Patterns-Examples/cmake-build/Factory_Pattern/CMakeFiles/Factory_Pattern.dir
 /Users/gongzian/src/Design-Patterns-Examples/cmake-build/Factory_Pattern/CMakeFiles/edit_cache.dir
 /Users/gongzian/src/Design-Patterns-Examples/cmake-build/Factory_Pattern/CMakeFiles/rebuild_cache.dir
+/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir
+/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Singleton_Pattern/CMakeFiles/edit_cache.dir
+/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Singleton_Pattern/CMakeFiles/rebuild_cache.dir
+/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Command_Pattern/CMakeFiles/Command_Pattern.dir
+/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Command_Pattern/CMakeFiles/edit_cache.dir
+/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Command_Pattern/CMakeFiles/rebuild_cache.dir

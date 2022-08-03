@@ -29,9 +29,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/Platform/UnixPaths.cmake"
   "../CMakeLists.txt"
+  "../Command_Pattern/CMakeLists.txt"
   "../Decorator_Pattern/CMakeLists.txt"
   "../Factory_Pattern/CMakeLists.txt"
   "../Observer_Pattern/CMakeLists.txt"
+  "../Singleton_Pattern/CMakeLists.txt"
   "CMakeFiles/3.23.0-rc3/CMakeCCompiler.cmake"
   "CMakeFiles/3.23.0-rc3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.23.0-rc3/CMakeSystem.cmake"
@@ -49,6 +51,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Observer_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Decorator_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Factory_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Singleton_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Command_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -56,4 +60,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "Observer_Pattern/CMakeFiles/Observer_Pattern.dir/DependInfo.cmake"
   "Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/DependInfo.cmake"
   "Factory_Pattern/CMakeFiles/Factory_Pattern.dir/DependInfo.cmake"
+  "Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/DependInfo.cmake"
+  "Command_Pattern/CMakeFiles/Command_Pattern.dir/DependInfo.cmake"
   )
