@@ -28,6 +28,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/Platform/UnixPaths.cmake"
+  "../Adapter_and_Facade_Pattern/CMakeLists.txt"
   "../CMakeLists.txt"
   "../Command_Pattern/CMakeLists.txt"
   "../Decorator_Pattern/CMakeLists.txt"
@@ -53,6 +54,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Factory_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Singleton_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Command_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Adapter_and_Facade_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -62,4 +64,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "Factory_Pattern/CMakeFiles/Factory_Pattern.dir/DependInfo.cmake"
   "Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/DependInfo.cmake"
   "Command_Pattern/CMakeFiles/Command_Pattern.dir/DependInfo.cmake"
+  "Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/DependInfo.cmake"
   )

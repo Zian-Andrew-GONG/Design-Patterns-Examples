@@ -181,6 +181,19 @@ Command_Pattern/fast:
 	$(MAKE) $(MAKESILENT) -f Command_Pattern/CMakeFiles/Command_Pattern.dir/build.make Command_Pattern/CMakeFiles/Command_Pattern.dir/build
 .PHONY : Command_Pattern/fast
 
+#=============================================================================
+# Target rules for targets named Adapter_and_Facade_Pattern
+
+# Build rule for target.
+Adapter_and_Facade_Pattern: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Adapter_and_Facade_Pattern
+.PHONY : Adapter_and_Facade_Pattern
+
+# fast build rule for target.
+Adapter_and_Facade_Pattern/fast:
+	$(MAKE) $(MAKESILENT) -f Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/build.make Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/build
+.PHONY : Adapter_and_Facade_Pattern/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,6 +202,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Adapter_and_Facade_Pattern"
 	@echo "... Command_Pattern"
 	@echo "... Decorator_Pattern"
 	@echo "... Factory_Pattern"

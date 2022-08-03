@@ -68,6 +68,7 @@ all: Decorator_Pattern/all
 all: Factory_Pattern/all
 all: Singleton_Pattern/all
 all: Command_Pattern/all
+all: Adapter_and_Facade_Pattern/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ preinstall: Decorator_Pattern/preinstall
 preinstall: Factory_Pattern/preinstall
 preinstall: Singleton_Pattern/preinstall
 preinstall: Command_Pattern/preinstall
+preinstall: Adapter_and_Facade_Pattern/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -84,7 +86,23 @@ clean: Decorator_Pattern/clean
 clean: Factory_Pattern/clean
 clean: Singleton_Pattern/clean
 clean: Command_Pattern/clean
+clean: Adapter_and_Facade_Pattern/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory Adapter_and_Facade_Pattern
+
+# Recursive "all" directory target.
+Adapter_and_Facade_Pattern/all: Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/all
+.PHONY : Adapter_and_Facade_Pattern/all
+
+# Recursive "preinstall" directory target.
+Adapter_and_Facade_Pattern/preinstall:
+.PHONY : Adapter_and_Facade_Pattern/preinstall
+
+# Recursive "clean" directory target.
+Adapter_and_Facade_Pattern/clean: Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/clean
+.PHONY : Adapter_and_Facade_Pattern/clean
 
 #=============================================================================
 # Directory level rules for directory Command_Pattern
@@ -168,7 +186,7 @@ Singleton_Pattern/clean: Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/clea
 Observer_Pattern/CMakeFiles/Observer_Pattern.dir/all:
 	$(MAKE) $(MAKESILENT) -f Observer_Pattern/CMakeFiles/Observer_Pattern.dir/build.make Observer_Pattern/CMakeFiles/Observer_Pattern.dir/depend
 	$(MAKE) $(MAKESILENT) -f Observer_Pattern/CMakeFiles/Observer_Pattern.dir/build.make Observer_Pattern/CMakeFiles/Observer_Pattern.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=7,8,9,10 "Built target Observer_Pattern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=9,10,11,12 "Built target Observer_Pattern"
 .PHONY : Observer_Pattern/CMakeFiles/Observer_Pattern.dir/all
 
 # Build rule for subdir invocation for target.
@@ -194,7 +212,7 @@ Observer_Pattern/CMakeFiles/Observer_Pattern.dir/clean:
 Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/all:
 	$(MAKE) $(MAKESILENT) -f Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/build.make Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/depend
 	$(MAKE) $(MAKESILENT) -f Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/build.make Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=3,4 "Built target Decorator_Pattern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=5,6 "Built target Decorator_Pattern"
 .PHONY : Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/all
 
 # Build rule for subdir invocation for target.
@@ -220,7 +238,7 @@ Decorator_Pattern/CMakeFiles/Decorator_Pattern.dir/clean:
 Factory_Pattern/CMakeFiles/Factory_Pattern.dir/all:
 	$(MAKE) $(MAKESILENT) -f Factory_Pattern/CMakeFiles/Factory_Pattern.dir/build.make Factory_Pattern/CMakeFiles/Factory_Pattern.dir/depend
 	$(MAKE) $(MAKESILENT) -f Factory_Pattern/CMakeFiles/Factory_Pattern.dir/build.make Factory_Pattern/CMakeFiles/Factory_Pattern.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=5,6 "Built target Factory_Pattern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=7,8 "Built target Factory_Pattern"
 .PHONY : Factory_Pattern/CMakeFiles/Factory_Pattern.dir/all
 
 # Build rule for subdir invocation for target.
@@ -246,7 +264,7 @@ Factory_Pattern/CMakeFiles/Factory_Pattern.dir/clean:
 Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/all:
 	$(MAKE) $(MAKESILENT) -f Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/build.make Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/depend
 	$(MAKE) $(MAKESILENT) -f Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/build.make Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=11,12 "Built target Singleton_Pattern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=13,14 "Built target Singleton_Pattern"
 .PHONY : Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/all
 
 # Build rule for subdir invocation for target.
@@ -272,7 +290,7 @@ Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/clean:
 Command_Pattern/CMakeFiles/Command_Pattern.dir/all:
 	$(MAKE) $(MAKESILENT) -f Command_Pattern/CMakeFiles/Command_Pattern.dir/build.make Command_Pattern/CMakeFiles/Command_Pattern.dir/depend
 	$(MAKE) $(MAKESILENT) -f Command_Pattern/CMakeFiles/Command_Pattern.dir/build.make Command_Pattern/CMakeFiles/Command_Pattern.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=1,2 "Built target Command_Pattern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=3,4 "Built target Command_Pattern"
 .PHONY : Command_Pattern/CMakeFiles/Command_Pattern.dir/all
 
 # Build rule for subdir invocation for target.
@@ -290,6 +308,32 @@ Command_Pattern: Command_Pattern/CMakeFiles/Command_Pattern.dir/rule
 Command_Pattern/CMakeFiles/Command_Pattern.dir/clean:
 	$(MAKE) $(MAKESILENT) -f Command_Pattern/CMakeFiles/Command_Pattern.dir/build.make Command_Pattern/CMakeFiles/Command_Pattern.dir/clean
 .PHONY : Command_Pattern/CMakeFiles/Command_Pattern.dir/clean
+
+#=============================================================================
+# Target rules for target Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir
+
+# All Build rule for target.
+Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/all:
+	$(MAKE) $(MAKESILENT) -f Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/build.make Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/depend
+	$(MAKE) $(MAKESILENT) -f Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/build.make Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=1,2 "Built target Adapter_and_Facade_Pattern"
+.PHONY : Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/all
+
+# Build rule for subdir invocation for target.
+Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles 0
+.PHONY : Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/rule
+
+# Convenience name for target.
+Adapter_and_Facade_Pattern: Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/rule
+.PHONY : Adapter_and_Facade_Pattern
+
+# clean rule for target.
+Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/build.make Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/clean
+.PHONY : Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -44,6 +44,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Factory_Pattern/cmake_install.cmake")
   include("/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Singleton_Pattern/cmake_install.cmake")
   include("/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Command_Pattern/cmake_install.cmake")
+  include("/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Adapter_and_Facade_Pattern/cmake_install.cmake")
 
 endif()
 

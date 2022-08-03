@@ -15,3 +15,6 @@
 /Users/gongzian/src/Design-Patterns-Examples/cmake-build/Command_Pattern/CMakeFiles/Command_Pattern.dir
 /Users/gongzian/src/Design-Patterns-Examples/cmake-build/Command_Pattern/CMakeFiles/edit_cache.dir
 /Users/gongzian/src/Design-Patterns-Examples/cmake-build/Command_Pattern/CMakeFiles/rebuild_cache.dir
+/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir
+/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Adapter_and_Facade_Pattern/CMakeFiles/edit_cache.dir
+/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Adapter_and_Facade_Pattern/CMakeFiles/rebuild_cache.dir
