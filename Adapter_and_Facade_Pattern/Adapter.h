@@ -51,20 +51,6 @@ namespace Adapter {
       std::shared_ptr<Turkey> turkey;
   };
 
-  // class C_TurkeyAdapter: public Duck, public Turkey { // 类适配器？
-  //   public:
-  //     virtual void quack() override {
-  //       this->gobble();
-  //     }
-  //     virtual void fly() override {
-  //       Turkey::fly();
-  //     }
-  //   private:
-  //     virtual void gobble() override {
-  //       this->gobble();
-  //     }
-  // };
-
   class C_WildTurkeyAdapter: public Duck, public WildTurkey { // 类适配器？
     public:
       virtual void quack() override {
