@@ -35,6 +35,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../Factory_Pattern/CMakeLists.txt"
   "../Observer_Pattern/CMakeLists.txt"
   "../Singleton_Pattern/CMakeLists.txt"
+  "../Template_Pattern/CMakeLists.txt"
   "CMakeFiles/3.23.0-rc3/CMakeCCompiler.cmake"
   "CMakeFiles/3.23.0-rc3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.23.0-rc3/CMakeSystem.cmake"
@@ -55,6 +56,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Singleton_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Command_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Adapter_and_Facade_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Template_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -65,4 +67,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/DependInfo.cmake"
   "Command_Pattern/CMakeFiles/Command_Pattern.dir/DependInfo.cmake"
   "Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/DependInfo.cmake"
+  "Template_Pattern/CMakeFiles/Template_Pattern.dir/DependInfo.cmake"
   )

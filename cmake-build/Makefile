@@ -194,6 +194,19 @@ Adapter_and_Facade_Pattern/fast:
 	$(MAKE) $(MAKESILENT) -f Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/build.make Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/build
 .PHONY : Adapter_and_Facade_Pattern/fast
 
+#=============================================================================
+# Target rules for targets named Template_Pattern
+
+# Build rule for target.
+Template_Pattern: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Template_Pattern
+.PHONY : Template_Pattern
+
+# fast build rule for target.
+Template_Pattern/fast:
+	$(MAKE) $(MAKESILENT) -f Template_Pattern/CMakeFiles/Template_Pattern.dir/build.make Template_Pattern/CMakeFiles/Template_Pattern.dir/build
+.PHONY : Template_Pattern/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -208,6 +221,7 @@ help:
 	@echo "... Factory_Pattern"
 	@echo "... Observer_Pattern"
 	@echo "... Singleton_Pattern"
+	@echo "... Template_Pattern"
 .PHONY : help
 
 
