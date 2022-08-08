@@ -24,3 +24,6 @@
 /Users/gongzian/src/Design-Patterns-Examples/cmake-build/State_Pattern/CMakeFiles/State_Pattern.dir
 /Users/gongzian/src/Design-Patterns-Examples/cmake-build/State_Pattern/CMakeFiles/edit_cache.dir
 /Users/gongzian/src/Design-Patterns-Examples/cmake-build/State_Pattern/CMakeFiles/rebuild_cache.dir
+/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir
+/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Proxy_Pattern/CMakeFiles/edit_cache.dir
+/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Proxy_Pattern/CMakeFiles/rebuild_cache.dir

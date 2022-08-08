@@ -71,6 +71,7 @@ all: Command_Pattern/all
 all: Adapter_and_Facade_Pattern/all
 all: Template_Pattern/all
 all: State_Pattern/all
+all: Proxy_Pattern/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -82,6 +83,7 @@ preinstall: Command_Pattern/preinstall
 preinstall: Adapter_and_Facade_Pattern/preinstall
 preinstall: Template_Pattern/preinstall
 preinstall: State_Pattern/preinstall
+preinstall: Proxy_Pattern/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -93,6 +95,7 @@ clean: Command_Pattern/clean
 clean: Adapter_and_Facade_Pattern/clean
 clean: Template_Pattern/clean
 clean: State_Pattern/clean
+clean: Proxy_Pattern/clean
 .PHONY : clean
 
 #=============================================================================
@@ -169,6 +172,21 @@ Observer_Pattern/preinstall:
 # Recursive "clean" directory target.
 Observer_Pattern/clean: Observer_Pattern/CMakeFiles/Observer_Pattern.dir/clean
 .PHONY : Observer_Pattern/clean
+
+#=============================================================================
+# Directory level rules for directory Proxy_Pattern
+
+# Recursive "all" directory target.
+Proxy_Pattern/all: Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/all
+.PHONY : Proxy_Pattern/all
+
+# Recursive "preinstall" directory target.
+Proxy_Pattern/preinstall:
+.PHONY : Proxy_Pattern/preinstall
+
+# Recursive "clean" directory target.
+Proxy_Pattern/clean: Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/clean
+.PHONY : Proxy_Pattern/clean
 
 #=============================================================================
 # Directory level rules for directory Singleton_Pattern
@@ -300,7 +318,7 @@ Factory_Pattern/CMakeFiles/Factory_Pattern.dir/clean:
 Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/all:
 	$(MAKE) $(MAKESILENT) -f Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/build.make Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/depend
 	$(MAKE) $(MAKESILENT) -f Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/build.make Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=13,14 "Built target Singleton_Pattern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=15,16 "Built target Singleton_Pattern"
 .PHONY : Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/all
 
 # Build rule for subdir invocation for target.
@@ -378,7 +396,7 @@ Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/clean:
 Template_Pattern/CMakeFiles/Template_Pattern.dir/all:
 	$(MAKE) $(MAKESILENT) -f Template_Pattern/CMakeFiles/Template_Pattern.dir/build.make Template_Pattern/CMakeFiles/Template_Pattern.dir/depend
 	$(MAKE) $(MAKESILENT) -f Template_Pattern/CMakeFiles/Template_Pattern.dir/build.make Template_Pattern/CMakeFiles/Template_Pattern.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=17,18 "Built target Template_Pattern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=19,20 "Built target Template_Pattern"
 .PHONY : Template_Pattern/CMakeFiles/Template_Pattern.dir/all
 
 # Build rule for subdir invocation for target.
@@ -404,7 +422,7 @@ Template_Pattern/CMakeFiles/Template_Pattern.dir/clean:
 State_Pattern/CMakeFiles/State_Pattern.dir/all:
 	$(MAKE) $(MAKESILENT) -f State_Pattern/CMakeFiles/State_Pattern.dir/build.make State_Pattern/CMakeFiles/State_Pattern.dir/depend
 	$(MAKE) $(MAKESILENT) -f State_Pattern/CMakeFiles/State_Pattern.dir/build.make State_Pattern/CMakeFiles/State_Pattern.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=15,16 "Built target State_Pattern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=17,18 "Built target State_Pattern"
 .PHONY : State_Pattern/CMakeFiles/State_Pattern.dir/all
 
 # Build rule for subdir invocation for target.
@@ -422,6 +440,32 @@ State_Pattern: State_Pattern/CMakeFiles/State_Pattern.dir/rule
 State_Pattern/CMakeFiles/State_Pattern.dir/clean:
 	$(MAKE) $(MAKESILENT) -f State_Pattern/CMakeFiles/State_Pattern.dir/build.make State_Pattern/CMakeFiles/State_Pattern.dir/clean
 .PHONY : State_Pattern/CMakeFiles/State_Pattern.dir/clean
+
+#=============================================================================
+# Target rules for target Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir
+
+# All Build rule for target.
+Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/all:
+	$(MAKE) $(MAKESILENT) -f Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/build.make Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/depend
+	$(MAKE) $(MAKESILENT) -f Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/build.make Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=13,14 "Built target Proxy_Pattern"
+.PHONY : Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/all
+
+# Build rule for subdir invocation for target.
+Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles 0
+.PHONY : Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/rule
+
+# Convenience name for target.
+Proxy_Pattern: Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/rule
+.PHONY : Proxy_Pattern
+
+# clean rule for target.
+Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/build.make Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/clean
+.PHONY : Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

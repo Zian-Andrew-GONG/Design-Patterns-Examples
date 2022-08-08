@@ -34,6 +34,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../Decorator_Pattern/CMakeLists.txt"
   "../Factory_Pattern/CMakeLists.txt"
   "../Observer_Pattern/CMakeLists.txt"
+  "../Proxy_Pattern/CMakeLists.txt"
   "../Singleton_Pattern/CMakeLists.txt"
   "../State_Pattern/CMakeLists.txt"
   "../Template_Pattern/CMakeLists.txt"
@@ -59,6 +60,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Adapter_and_Facade_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Template_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
   "State_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Proxy_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -71,4 +73,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/DependInfo.cmake"
   "Template_Pattern/CMakeFiles/Template_Pattern.dir/DependInfo.cmake"
   "State_Pattern/CMakeFiles/State_Pattern.dir/DependInfo.cmake"
+  "Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/DependInfo.cmake"
   )

@@ -220,6 +220,19 @@ State_Pattern/fast:
 	$(MAKE) $(MAKESILENT) -f State_Pattern/CMakeFiles/State_Pattern.dir/build.make State_Pattern/CMakeFiles/State_Pattern.dir/build
 .PHONY : State_Pattern/fast
 
+#=============================================================================
+# Target rules for targets named Proxy_Pattern
+
+# Build rule for target.
+Proxy_Pattern: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Proxy_Pattern
+.PHONY : Proxy_Pattern
+
+# fast build rule for target.
+Proxy_Pattern/fast:
+	$(MAKE) $(MAKESILENT) -f Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/build.make Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/build
+.PHONY : Proxy_Pattern/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -233,6 +246,7 @@ help:
 	@echo "... Decorator_Pattern"
 	@echo "... Factory_Pattern"
 	@echo "... Observer_Pattern"
+	@echo "... Proxy_Pattern"
 	@echo "... Singleton_Pattern"
 	@echo "... State_Pattern"
 	@echo "... Template_Pattern"
