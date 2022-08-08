@@ -70,6 +70,7 @@ all: Singleton_Pattern/all
 all: Command_Pattern/all
 all: Adapter_and_Facade_Pattern/all
 all: Template_Pattern/all
+all: State_Pattern/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -80,6 +81,7 @@ preinstall: Singleton_Pattern/preinstall
 preinstall: Command_Pattern/preinstall
 preinstall: Adapter_and_Facade_Pattern/preinstall
 preinstall: Template_Pattern/preinstall
+preinstall: State_Pattern/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -90,6 +92,7 @@ clean: Singleton_Pattern/clean
 clean: Command_Pattern/clean
 clean: Adapter_and_Facade_Pattern/clean
 clean: Template_Pattern/clean
+clean: State_Pattern/clean
 .PHONY : clean
 
 #=============================================================================
@@ -181,6 +184,21 @@ Singleton_Pattern/preinstall:
 # Recursive "clean" directory target.
 Singleton_Pattern/clean: Singleton_Pattern/CMakeFiles/Singleton_Pattern.dir/clean
 .PHONY : Singleton_Pattern/clean
+
+#=============================================================================
+# Directory level rules for directory State_Pattern
+
+# Recursive "all" directory target.
+State_Pattern/all: State_Pattern/CMakeFiles/State_Pattern.dir/all
+.PHONY : State_Pattern/all
+
+# Recursive "preinstall" directory target.
+State_Pattern/preinstall:
+.PHONY : State_Pattern/preinstall
+
+# Recursive "clean" directory target.
+State_Pattern/clean: State_Pattern/CMakeFiles/State_Pattern.dir/clean
+.PHONY : State_Pattern/clean
 
 #=============================================================================
 # Directory level rules for directory Template_Pattern
@@ -360,7 +378,7 @@ Adapter_and_Facade_Pattern/CMakeFiles/Adapter_and_Facade_Pattern.dir/clean:
 Template_Pattern/CMakeFiles/Template_Pattern.dir/all:
 	$(MAKE) $(MAKESILENT) -f Template_Pattern/CMakeFiles/Template_Pattern.dir/build.make Template_Pattern/CMakeFiles/Template_Pattern.dir/depend
 	$(MAKE) $(MAKESILENT) -f Template_Pattern/CMakeFiles/Template_Pattern.dir/build.make Template_Pattern/CMakeFiles/Template_Pattern.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=15,16 "Built target Template_Pattern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=17,18 "Built target Template_Pattern"
 .PHONY : Template_Pattern/CMakeFiles/Template_Pattern.dir/all
 
 # Build rule for subdir invocation for target.
@@ -378,6 +396,32 @@ Template_Pattern: Template_Pattern/CMakeFiles/Template_Pattern.dir/rule
 Template_Pattern/CMakeFiles/Template_Pattern.dir/clean:
 	$(MAKE) $(MAKESILENT) -f Template_Pattern/CMakeFiles/Template_Pattern.dir/build.make Template_Pattern/CMakeFiles/Template_Pattern.dir/clean
 .PHONY : Template_Pattern/CMakeFiles/Template_Pattern.dir/clean
+
+#=============================================================================
+# Target rules for target State_Pattern/CMakeFiles/State_Pattern.dir
+
+# All Build rule for target.
+State_Pattern/CMakeFiles/State_Pattern.dir/all:
+	$(MAKE) $(MAKESILENT) -f State_Pattern/CMakeFiles/State_Pattern.dir/build.make State_Pattern/CMakeFiles/State_Pattern.dir/depend
+	$(MAKE) $(MAKESILENT) -f State_Pattern/CMakeFiles/State_Pattern.dir/build.make State_Pattern/CMakeFiles/State_Pattern.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles --progress-num=15,16 "Built target State_Pattern"
+.PHONY : State_Pattern/CMakeFiles/State_Pattern.dir/all
+
+# Build rule for subdir invocation for target.
+State_Pattern/CMakeFiles/State_Pattern.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 State_Pattern/CMakeFiles/State_Pattern.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/Design-Patterns-Examples/cmake-build/CMakeFiles 0
+.PHONY : State_Pattern/CMakeFiles/State_Pattern.dir/rule
+
+# Convenience name for target.
+State_Pattern: State_Pattern/CMakeFiles/State_Pattern.dir/rule
+.PHONY : State_Pattern
+
+# clean rule for target.
+State_Pattern/CMakeFiles/State_Pattern.dir/clean:
+	$(MAKE) $(MAKESILENT) -f State_Pattern/CMakeFiles/State_Pattern.dir/build.make State_Pattern/CMakeFiles/State_Pattern.dir/clean
+.PHONY : State_Pattern/CMakeFiles/State_Pattern.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -207,6 +207,19 @@ Template_Pattern/fast:
 	$(MAKE) $(MAKESILENT) -f Template_Pattern/CMakeFiles/Template_Pattern.dir/build.make Template_Pattern/CMakeFiles/Template_Pattern.dir/build
 .PHONY : Template_Pattern/fast
 
+#=============================================================================
+# Target rules for targets named State_Pattern
+
+# Build rule for target.
+State_Pattern: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 State_Pattern
+.PHONY : State_Pattern
+
+# fast build rule for target.
+State_Pattern/fast:
+	$(MAKE) $(MAKESILENT) -f State_Pattern/CMakeFiles/State_Pattern.dir/build.make State_Pattern/CMakeFiles/State_Pattern.dir/build
+.PHONY : State_Pattern/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -221,6 +234,7 @@ help:
 	@echo "... Factory_Pattern"
 	@echo "... Observer_Pattern"
 	@echo "... Singleton_Pattern"
+	@echo "... State_Pattern"
 	@echo "... Template_Pattern"
 .PHONY : help
 
