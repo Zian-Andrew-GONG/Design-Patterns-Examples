@@ -41,6 +41,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.23.0-rc3/CMakeCCompiler.cmake"
   "CMakeFiles/3.23.0-rc3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.23.0-rc3/CMakeSystem.cmake"
+  "../iterator_and_Composite_Pattern/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -61,6 +62,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Template_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
   "State_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Proxy_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "iterator_and_Composite_Pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -74,4 +76,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "Template_Pattern/CMakeFiles/Template_Pattern.dir/DependInfo.cmake"
   "State_Pattern/CMakeFiles/State_Pattern.dir/DependInfo.cmake"
   "Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/DependInfo.cmake"
+  "iterator_and_Composite_Pattern/CMakeFiles/Iterator_and_Composite_Pattern.dir/DependInfo.cmake"
   )

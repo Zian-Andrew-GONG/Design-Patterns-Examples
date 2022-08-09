@@ -233,6 +233,19 @@ Proxy_Pattern/fast:
 	$(MAKE) $(MAKESILENT) -f Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/build.make Proxy_Pattern/CMakeFiles/Proxy_Pattern.dir/build
 .PHONY : Proxy_Pattern/fast
 
+#=============================================================================
+# Target rules for targets named Iterator_and_Composite_Pattern
+
+# Build rule for target.
+Iterator_and_Composite_Pattern: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Iterator_and_Composite_Pattern
+.PHONY : Iterator_and_Composite_Pattern
+
+# fast build rule for target.
+Iterator_and_Composite_Pattern/fast:
+	$(MAKE) $(MAKESILENT) -f iterator_and_Composite_Pattern/CMakeFiles/Iterator_and_Composite_Pattern.dir/build.make iterator_and_Composite_Pattern/CMakeFiles/Iterator_and_Composite_Pattern.dir/build
+.PHONY : Iterator_and_Composite_Pattern/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -245,6 +258,7 @@ help:
 	@echo "... Command_Pattern"
 	@echo "... Decorator_Pattern"
 	@echo "... Factory_Pattern"
+	@echo "... Iterator_and_Composite_Pattern"
 	@echo "... Observer_Pattern"
 	@echo "... Proxy_Pattern"
 	@echo "... Singleton_Pattern"

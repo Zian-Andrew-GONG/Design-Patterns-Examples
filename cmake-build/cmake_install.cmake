@@ -48,6 +48,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Template_Pattern/cmake_install.cmake")
   include("/Users/gongzian/src/Design-Patterns-Examples/cmake-build/State_Pattern/cmake_install.cmake")
   include("/Users/gongzian/src/Design-Patterns-Examples/cmake-build/Proxy_Pattern/cmake_install.cmake")
+  include("/Users/gongzian/src/Design-Patterns-Examples/cmake-build/iterator_and_Composite_Pattern/cmake_install.cmake")
 
 endif()
 
